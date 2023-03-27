@@ -1,0 +1,12 @@
+{
+  "name": "readerai-api",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "python -m uvicorn main:app --reload --host 0.0.0.0",
+    "setup:env": "python -m venv .readerai",
+    "setup:activate": "source .readerai/bin/activate",
+    "setup:pip": "python -m pip install -r requirements.txt",
+    "setup": "npm run setup:env && npm run setup:activate && npm run setup:pip"
+  }
+}
